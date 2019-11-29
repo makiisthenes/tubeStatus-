@@ -5,8 +5,8 @@ import colorama
 from colorama import init
 from colorama import Fore, Back, Style
 
-tfl_api_id = '158d290e'
-tfl_api_key = '6192c53aa8807df16ad4f00b76bf7b00'
+tfl_api_id = 'YOUR_API_ID'
+tfl_api_key = 'YOUR_API_KEY'
 #print(tfl1)
 
 init()
