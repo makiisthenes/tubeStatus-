@@ -1,7 +1,6 @@
 import requests
 import os
 import time
-import colorama
 from colorama import init
 from colorama import Fore, Back, Style
 my_api_id = '158d290e'
@@ -10,9 +9,6 @@ tfl_api_id = 'YOUR_API_ID'
 tfl_api_key = 'YOUR_API_KEY'
 #print(tfl1)
 my_url = 'https://api.tfl.gov.uk/Line/Mode/tube/Status?detail=false&app_id='+my_api_id+'&app_key='+my_api_key
-init()
-
-
 while True:
     tfl1 = requests.get(my_url).json()
     print(tfl1[0]['name']+ ' --> ' + tfl1[0]['lineStatuses'][0]['statusSeverityDescription'])
@@ -30,4 +26,4 @@ while True:
     time.sleep(10)
     os.system('cls')
 
-
+# [API ATTEMPT BY MICHAEL PERES]
